@@ -1,8 +1,7 @@
-import 'package:chartz/presentation/models/line_titles_for_currentr.dart';
-import 'package:chartz/presentation/models/line_titles_for_power.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
+import '../../models/line_titles_for_power.dart';
 import '../../models/temp.dart';
 
 class PowerView extends StatefulWidget {
@@ -38,6 +37,45 @@ class _PowerViewState extends State<PowerView> {
           padding: const EdgeInsets.all(10),
           children: [
             ...powerList!
+                .map(
+                  (e) => Container(
+                    margin: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      boxShadow: const [
+                        BoxShadow(
+                          blurRadius: 2,
+                          color: Colors.blue,
+                        ),
+                      ],
+                      color: const Color(0xFF010429),
+                      border: Border.all(
+                        color: const Color.fromARGB(255, 26, 34, 160),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                    child: Center(
+                      child: Text(
+                        e.toString(),
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+                .toList(),
+            const Center(
+              child: Text(
+                'Voltage',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ...voltageList!
                 .map(
                   (e) => Container(
                     margin: const EdgeInsets.all(2),
@@ -112,7 +150,7 @@ class _PowerViewState extends State<PowerView> {
             lineBarsData: [
               LineChartBarData(
                 spots: [
-                  const FlSpot(0, 0),
+                  // const FlSpot(0, 0),
                   FlSpot(finalVoltList[0], finalPowerList[0]),
                   FlSpot(finalVoltList[1], finalPowerList[1]),
                   FlSpot(finalVoltList[2], finalPowerList[2]),

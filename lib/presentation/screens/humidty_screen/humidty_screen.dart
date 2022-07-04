@@ -1,3 +1,4 @@
+import 'package:charts/presentation/models/line_chart_humidty.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
@@ -84,7 +85,7 @@ class _HumidtyViewState extends State<HumidtyView> {
             maxX: 9,
             minY: 0,
             maxY: 9,
-            titlesData: LineTitles.getTitleData(),
+            titlesData: LineTitlesHumidty.getTitleData(),
             gridData: FlGridData(
               show: true,
               getDrawingHorizontalLine: (value) {

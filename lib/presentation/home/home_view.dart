@@ -1,4 +1,4 @@
-import 'package:chartz/presentation/models/temp.dart';
+import 'package:charts/presentation/models/temp.dart';
 import 'package:flutter/material.dart';
 
 import '../resources/color_manger.dart';
@@ -18,7 +18,7 @@ class _HomeViewState extends State<HomeView> {
       return showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: const Text('Error'),
+          title: const Text('Fault'),
           content: Text(errorList![0]),
           actions: [
             TextButton(

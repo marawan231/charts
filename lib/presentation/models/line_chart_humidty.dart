@@ -2,7 +2,7 @@ import 'package:charts/presentation/models/temp.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 
-class LineTitles {
+class LineTitlesHumidty {
   static getTitleData() => FlTitlesData(
         show: true,
         bottomTitles: AxisTitles(
@@ -77,52 +77,52 @@ class LineTitles {
               switch (value.toInt()) {
                 case 0:
                   return Text(
-                    '36',
+                    '33',
                     style: titlesTextstyle,
                   );
                 case 1:
                   return Text(
-                    '36.5',
+                    '33.4',
                     style: titlesTextstyle,
                   );
                 case 2:
                   return Text(
-                    '37.0',
+                    '33.8',
                     style: titlesTextstyle,
                   );
                 case 3:
                   return Text(
-                    '37.5',
+                    '34.2',
                     style: titlesTextstyle,
                   );
                 case 4:
                   return Text(
-                    '38.0',
+                    '34.6',
                     style: titlesTextstyle,
                   );
                 case 5:
                   return Text(
-                    '38.5',
+                    '35',
                     style: titlesTextstyle,
                   );
                 case 6:
                   return Text(
-                    '39.0',
+                    '35.4',
                     style: titlesTextstyle,
                   );
                 case 7:
                   return Text(
-                    '40.0',
+                    '35.8',
                     style: titlesTextstyle,
                   );
                 case 8:
                   return Text(
-                    '40.5',
+                    '36.2',
                     style: titlesTextstyle,
                   );
                 case 9:
                   return Text(
-                    '41',
+                    '36.4',
                     style: titlesTextstyle,
                   );
               }

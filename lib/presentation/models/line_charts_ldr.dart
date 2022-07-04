@@ -1,4 +1,4 @@
-import 'package:chartz/presentation/models/temp.dart';
+import 'package:charts/presentation/models/temp.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -77,52 +77,52 @@ class LineChartsLdr {
               switch (value.toInt()) {
                 case 0:
                   return const Text(
-                    '0',
+                    '236',
                     style: titlesTextstyle,
                   );
                 case 1:
                   return const Text(
-                    '40',
+                    '240',
                     style: titlesTextstyle,
                   );
                 case 2:
                   return const Text(
-                    '80',
+                    '244',
                     style: titlesTextstyle,
                   );
                 case 3:
                   return const Text(
-                    '120',
+                    '248',
                     style: titlesTextstyle,
                   );
                 case 4:
                   return const Text(
-                    '160',
+                    '252',
                     style: titlesTextstyle,
                   );
                 case 5:
                   return const Text(
-                    '200',
+                    '256',
                     style: titlesTextstyle,
                   );
                 case 6:
                   return const Text(
-                    '240',
+                    '260',
                     style: titlesTextstyle,
                   );
                 case 7:
                   return const Text(
-                    '280',
+                    '264',
                     style: titlesTextstyle,
                   );
                 case 8:
                   return const Text(
-                    '320',
+                    '268',
                     style: titlesTextstyle,
                   );
                 case 9:
                   return const Text(
-                    '360',
+                    '272',
                     style: titlesTextstyle,
                   );
               }

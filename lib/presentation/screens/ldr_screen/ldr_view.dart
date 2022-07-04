@@ -1,9 +1,8 @@
-import 'package:chartz/presentation/models/line_charts_ldr.dart';
-import 'package:chartz/presentation/models/line_titles_for_currentr.dart';
-import 'package:chartz/presentation/models/line_titles_for_power.dart';
+
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
+import '../../models/line_charts_ldr.dart';
 import '../../models/temp.dart';
 
 class LdrView extends StatefulWidget {

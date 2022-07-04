@@ -1,5 +1,5 @@
-import 'package:chartz/presentation/screens/current_screen/current_view.dart';
-import 'package:chartz/presentation/screens/power_screen/power_view.dart';
+import 'package:charts/presentation/screens/current_screen/current_view.dart';
+import 'package:charts/presentation/screens/power_screen/power_view.dart';
 import 'package:flutter/material.dart';
 
 import '../home/home_view.dart';

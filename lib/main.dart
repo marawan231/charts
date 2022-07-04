@@ -1,6 +1,5 @@
-import 'package:chartz/presentation/app/app.dart';
-import 'package:chartz/presentation/models/temp.dart';
-
+import 'package:charts/presentation/app/app.dart';
+import 'package:charts/presentation/models/temp.dart';
 import 'package:flutter/material.dart';
 import 'package:gsheets/gsheets.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -71,7 +70,7 @@ void main() async {
   powerList = power!.values.toList();
 
   final error = await sheet.values.map.columnByKey(
-    'Error Name',
+    'Fault Name',
   );
 
   errorList = error!.values.toList();
